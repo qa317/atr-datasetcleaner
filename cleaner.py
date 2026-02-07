@@ -86,13 +86,12 @@ Before you continue, make sure the following are ready:
    - Ask the officers to provide this file.
 
 2. The XLSForm Google Sheet link
-   - The service account email
-     qa-officers@dplt-472317.iam.gserviceaccount.com
+   - The email
+     [qa-officers@dplt-472317.iam.gserviceaccount.com]
      MUST have access to the XLSForm.
 
 3. XLSForm structure requirements
-   - The 'survey' sheet must exist.
-   - It must contain a column named 'dataset'.
+   - the xlsform must contain a column named 'dataset'.
    - Fields marked as 'pii' in the 'dataset' column will be anonymized.
 
 --------------------------------------------------
