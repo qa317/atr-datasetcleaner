@@ -77,6 +77,27 @@ def mask_excel_file(
 
 
 def main():
+
+    print(
+        """
+Before you continue, make sure the following are ready:
+
+1. A Google service account JSON key file
+   - Ask the officers to provide this file.
+
+2. The XLSForm Google Sheet link
+   - The service account email
+     qa-officers@dplt-472317.iam.gserviceaccount.com
+     MUST have access to the XLSForm.
+
+3. XLSForm structure requirements
+   - The 'survey' sheet must exist.
+   - It must contain a column named 'dataset'.
+   - Fields marked as 'pii' in the 'dataset' column will be anonymized.
+
+--------------------------------------------------
+"""
+    )
     key_path = input("Enter path to your service account key JSON file: ").strip()
     xlsform_link = input("Enter the Google Sheets (XLSForm) URL: ").strip()
     input_file = input("Enter path to your Raw dataset: ").strip()
